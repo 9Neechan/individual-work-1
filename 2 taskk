@@ -1,0 +1,28 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+class Book2{
+public:
+    string name;
+    int pages;
+    Book2(string name,int pages): name(name), pages(pages){}
+};
+
+class Book1:public Book2{
+public:
+    void print(){
+        cout << "name: " << name << endl;
+        cout << "number of pages: " << pages << endl;
+    }
+    int number_of_letters(){
+        return name.length();
+    }
+};
+
+int main(){
+    vector<void *>v(10);
+
+    return 0;
+}
